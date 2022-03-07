@@ -17,11 +17,11 @@ div {
 }
 
 .article-left{
-    margin-left: 0;
+    margin-left: 10em;
     margin-right: auto;
 }
 
 .article-right{
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 10em;
 }
