@@ -19,15 +19,3 @@ window.onload = function(){
     }
 }
 
-function JaImp(){
-
-}
-
-function NeinImp(){
-
-}
-
-function MaybeImp(){
-
-}
-
