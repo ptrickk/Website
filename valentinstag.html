@@ -14,16 +14,20 @@
 
         <button id="knopf" onclick="progress()" class="p-0 border rounded-xl w-32 self-center">Weiter</button>
 
-        <form id="frage" action="/antwort.html" method="get" class=" border rounded-xl">
+        <div id="frage" class=" border rounded-xl">
             <div class="flex flex-col">
-                <span class="m-auto"><input type="radio" name="result" id="ja" value="JA" checked="checked" class="mr-3" /><label for="ja">Ja</label></span>
-                <span class="m-auto"><input type="radio" name="result" id="nein" value="NEIN" class="mr-3"/><label for="ja">Nein</label></span>
-                <span class="m-auto"><input type="radio" name="result" id="maybe" value="MAYBE" class="mr-3"/><label for="maybe">Vielleicht</label></span>
+                <span class="m-auto"><input type="radio" name="result" id="ja" value="JA" checked="checked"
+                        class="mr-3" /><label for="ja">Ja</label></span>
+                <span class="m-auto"><input type="radio" name="result" id="nein" value="NEIN" class="mr-3" /><label
+                        for="ja">Nein</label></span>
+                <span class="m-auto"><input type="radio" name="result" id="maybe" value="MAYBE" class="mr-3" /><label
+                        for="maybe">Vielleicht</label></span>
+                <p id="feedback"></p>
+                <input type="submit" value="Fertig" onclick="absenden()"
+                    class="p-0 border rounded-xl w-32 self-center mx-auto mb-2" />
             </div>
-            <p id="feedback"></p>
 
-            <input type="submit" value="Fertig" class="p-0 border rounded-xl w-32 self-center mb-2" />
-        </form>
+        </div>
         <img src="./img/sad_capybara.jpg" id="sad_capybara" class="rounded-2xl">
     </div>
 </body>

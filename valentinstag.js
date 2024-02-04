@@ -20,6 +20,22 @@ window.onchange = function () {
     }
 }
 
+function absenden(){
+    let ja = document.getElementById('ja');
+    let nein = document.getElementById('nein');
+    let maybe = document.getElementById('maybe');
+
+    if(ja.checked){
+        window.location.replace("./antworten/ja.html");
+    }
+    if(nein.checked){
+        window.location.replace("./antworten/nein.html");
+    }
+    if(maybe.checked){
+        window.location.replace("./antworten/maybe.html");
+    }
+}
+
 function progress() {
     state++;
 
