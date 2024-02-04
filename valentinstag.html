@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="valentinstag.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Hai</title>
+</head>
+
+<body class="bg-red-400">
+    <div class="flex flex-col m-auto text-center">
+        <p id="nachricht" class="py-4 m-4 border rounded-xl h-24"></p>
+
+        <button id="knopf" onclick="progress()" class="p-0 border rounded-xl w-32 self-center">Weiter</button>
+
+        <form id="frage" action="/antwort.html" method="get" class=" border rounded-xl">
+            <div class="flex flex-col">
+                <span class="m-auto"><input type="radio" name="result" id="ja" value="JA" checked="checked" class="mr-3" /><label for="ja">Ja</label></span>
+                <span class="m-auto"><input type="radio" name="result" id="nein" value="NEIN" class="mr-3"/><label for="ja">Nein</label></span>
+                <span class="m-auto"><input type="radio" name="result" id="maybe" value="MAYBE" class="mr-3"/><label for="maybe">Vielleicht</label></span>
+            </div>
+            <p id="feedback"></p>
+
+            <input type="submit" value="Fertig" class="p-0 border rounded-xl w-32 self-center mb-2" />
+        </form>
+        <img src="./img/sad_capybara.jpg" id="sad_capybara" class="rounded-2xl">
+    </div>
+</body>
+
+</html>
